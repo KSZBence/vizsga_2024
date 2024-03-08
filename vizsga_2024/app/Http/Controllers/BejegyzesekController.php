@@ -18,9 +18,9 @@ class BejegyzesekController extends Controller
 
     public function showclass($osztaly)
     {
-        $osszosztaly = DB::table('bejegyzesek b')
-        ->select('b.id, t.tevekenyseg_id, t.tevekenyseg_nev, t.pontszam')
-        ->join('tevekenyseg t', 't.tevekenyseg_id', '=', 'b.tevekenyseg_id')
+        $osszosztaly = DB::table('bejegyzeseks')
+        ->select('bejegyzeseks.id, tevekenysegs.tevekenyseg_id, tevekenysegs.tevekenyseg_nev, tevekenysegs.pontszam')
+        ->join('tevekenysegs', 'tevekenysegs.tevekenyseg_id', '=', 'bejegyzeseks.tevekenyseg_id')
         ->where('osztaly_id', '=', $osztaly)
         ->get();
 

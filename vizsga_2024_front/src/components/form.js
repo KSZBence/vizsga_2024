@@ -9,7 +9,7 @@ export default function InputForm() {
                 <Form.Group className="mb-3">
                         <Form.Label htmlFor="Select">osztály</Form.Label>
                         <Form.Select id="Select">
-                            <option>válassz</option>
+                            <option>válassz</option>                            
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>

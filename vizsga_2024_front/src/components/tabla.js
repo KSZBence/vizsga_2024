@@ -1,6 +1,6 @@
 import Table from 'react-bootstrap/Table';
 
-export default function Tabla() {
+export default function Tabla(props) {
     return (
         <Table striped bordered hover>
             <thead>
@@ -12,21 +12,11 @@ export default function Tabla() {
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
+                    <td></td>
                     <td>1</td>
                     <td>Bicikli</td>
 
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>ültetés</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>roller</td>
-                </tr>
+                </tr>        
             </tbody>
         </Table>
     )
